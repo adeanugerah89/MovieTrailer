@@ -1,5 +1,8 @@
 'use strict'
 //All Dependencies
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/movieTrailer');
+
 var cors = require('cors')
 const express = require('express'),
       path = require('path'),

@@ -1,9 +1,8 @@
-'use strict'
-const express = require('express');
-const router = express.Router();
-const controller = require('../controllers/indexController')
+var express = require('express');
+var router = express.Router();
+var controller = require('../controllers/userController');
 
-/* GET users listing. */
-router.get('/search/:movieSearch',controller.search);
+router.post('/signup', controller.signUp);
+router.post('/signin', controller.signIn);
 
 module.exports = router;
